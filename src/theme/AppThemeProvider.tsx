@@ -1,4 +1,4 @@
-import { NativeBaseProvider, StatusBar, extendTheme } from 'native-base';
+import { NativeBaseProvider, extendTheme } from 'native-base';
 import { PropsWithChildren } from 'react';
 
 const AppThemeProvider = ({ children }: PropsWithChildren) => {

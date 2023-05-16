@@ -1,7 +1,6 @@
-import { View } from 'native-base';
-import { AppThemeProvider } from './src/theme';
-import { AppNavigator } from './src/navigation/app';
 import { NavigationContainer } from '@react-navigation/native';
+import { AppNavigator } from './src/navigation/app';
+import { AppThemeProvider } from './src/theme';
 
 const App = () => {
   return (
