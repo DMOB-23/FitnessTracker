@@ -1,6 +1,7 @@
 import { useNavigation } from '@react-navigation/native';
 import { AddIcon, Fab, View, useTheme } from 'native-base';
 import { AppNavigationProps } from '../../navigation/app/interface';
+import { Container } from './Styles';
 
 const HomeScreen = () => {
   const { colors } = useTheme();
@@ -11,13 +12,14 @@ const HomeScreen = () => {
   };
 
   return (
-    <View>
+    <Container>
       <Fab
         icon={<AddIcon />}
         backgroundColor={colors.secondary[600]}
         onPress={openRegister}
+        renderInPortal={false}
       />
-    </View>
+    </Container>
   );
 };
 
